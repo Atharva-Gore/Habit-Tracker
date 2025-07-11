@@ -8,15 +8,16 @@
 </head>
 <body>
   <div class="container">
-    <h1>📆 Mini Habit Tracker</h1>
-
-    <div class="top-bar">
-      <form id="habitForm">
-        <input type="text" id="habitInput" placeholder="Add new habit..." />
-        <button type="submit">➕ Add</button>
-      </form>
+    <header>
+      <h1>📆 Mini Habit Tracker</h1>
+      <p id="currentDate">🗓️ Loading date...</p>
       <button id="toggleTheme">🌙 Toggle Theme</button>
-    </div>
+    </header>
+
+    <form id="habitForm">
+      <input type="text" id="habitInput" placeholder="Add new habit..." />
+      <button type="submit">➕ Add</button>
+    </form>
 
     <div id="habitList"></div>
 
