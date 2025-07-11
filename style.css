@@ -34,10 +34,29 @@ body {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
 }
 
-h1, h3 {
+header {
   text-align: center;
   margin-bottom: 20px;
+}
+
+header h1 {
   color: var(--accent);
+}
+
+#currentDate {
+  margin: 5px 0 10px;
+  font-size: 16px;
+  color: var(--text);
+}
+
+#toggleTheme {
+  margin-top: 10px;
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 #habitForm {
@@ -54,7 +73,7 @@ h1, h3 {
   font-size: 16px;
 }
 
-#habitForm button, #toggleTheme {
+#habitForm button {
   background: var(--accent);
   color: white;
   border: none;
