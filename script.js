@@ -3,6 +3,7 @@ const habitInput = document.getElementById("habitInput");
 const habitList = document.getElementById("habitList");
 const progressBar = document.getElementById("progressBar");
 const toggleThemeBtn = document.getElementById("toggleTheme");
+const currentDate = document.getElementById("currentDate");
 
 let habits = JSON.parse(localStorage.getItem("habits")) || [];
 
@@ -13,6 +14,12 @@ function saveHabits() {
 function getTodayKey() {
   const today = new Date();
   return today.toISOString().split("T")[0];
+}
+
+function showCurrentDate() {
+  const today = new Date();
+  const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+  currentDate.textContent = `🗓️ ${today.toLocaleDateString(undefined, options)}`;
 }
 
 function toggleHabit(index) {
@@ -141,4 +148,5 @@ function updateChart() {
 }
 
 // Initialize
+showCurrentDate();
 renderHabits();
