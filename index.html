@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>✅ Mini Habit Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📆 Mini Habit Tracker</h1>
+
+    <div class="top-bar">
+      <form id="habitForm">
+        <input type="text" id="habitInput" placeholder="Add new habit..." />
+        <button type="submit">➕ Add</button>
+      </form>
+      <button id="toggleTheme">🌙 Toggle Theme</button>
+    </div>
+
+    <div id="habitList"></div>
+
+    <div id="dailyProgress">
+      <h3>🕒 Daily Progress</h3>
+      <progress id="progressBar" value="0" max="100"></progress>
+    </div>
+
+    <div id="weeklyChart">
+      <h3>📊 Weekly Chart</h3>
+      <canvas id="chartCanvas" width="400" height="200"></canvas>
+    </div>
+
+    <div id="calendar">
+      <h3>📆 Calendar View (Coming Soon)</h3>
+      <p style="text-align:center; color: gray;">Basic calendar visualization will go here.</p>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
